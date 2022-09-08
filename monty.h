@@ -9,6 +9,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/* global struct to hold flag for queue and stack length */
+extern var_t var;
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
