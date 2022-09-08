@@ -20,6 +20,9 @@ typedef struct var_s
 	size_t stack_len;
 } var_t;
 
+#define STACK 0
+#define QUEUE 1
+
 /* global struct to hold flag for queue and stack length */
 extern var_t var;
 
