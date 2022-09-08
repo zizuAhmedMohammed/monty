@@ -9,6 +9,17 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/**
+ * struct var_s - struct to contain the main variables of the Monty interpreter
+ * @queue: flag to determine if in stack vs queue mode
+ * @stack_len: length of the stack
+ */
+typedef struct var_s
+{
+	int queue;
+	size_t stack_len;
+} var_t;
+
 /* global struct to hold flag for queue and stack length */
 extern var_t var;
 
