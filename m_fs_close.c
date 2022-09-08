@@ -9,8 +9,10 @@
  */
 void m_fs_close(int status, void *arg)
 {
-	(void)(status);
-	FILE *fs = (FILE *) arg;
+	FILE *fs;
 
+	(void)status;
+
+	fs = (FILE *) arg;
 	fclose(fs);
 }
